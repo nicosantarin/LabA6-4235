@@ -19,6 +19,8 @@
   "homepage": "https://github.com/nicosantarin/LabA6-4235#readme",
   "dependencies": {
     "@google-cloud/vision": "^0.15.2",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
     "express": "^4.16.2"
   }
 }

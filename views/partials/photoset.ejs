@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<img id="image" src="./photo/1.jpg"/>
+<select id="PhotoList">
+    <option value="./photo/1.jpg">Photo 1 </option>
+    <option value="./photo/2.jpg">Photo 2</option>
+    <option value="./photo/3.jpg">Photo 3</option>
+    <option value="./photo/4.jpg">Photo 4</option>
+</select>
+
+<script>
+var changeImage = function () {
+  document.getElementById('image').src = this.options[this.selectedIndex].value + ".jpg"
+}
+
+var photoList = document.getElementById('PhotoList');
+photoList.addEventListener('change', changeImage, false);
+</script>
